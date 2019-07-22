@@ -1,0 +1,7 @@
+#goal definition
+bool request
+---
+#result definition
+bool OpenOrClose
+---
+
