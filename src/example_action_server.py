@@ -19,6 +19,7 @@ class ExampleAction(object):
 		self._as.start()
 
 	def execute_cb(self, goal):
+		#helper variables
 		r = rospy.Rate(1)
 		success = True
 
