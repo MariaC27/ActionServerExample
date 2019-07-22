@@ -20,7 +20,9 @@ def example_client():
 	client.wait_for_server()
 
 	#creates a goal to send to the action server 
-	goal = action_server_example.msg.OpenCloseGoal(request=False)
+	goal = action_server_example.msg.OpenCloseGoal(request=True)
+	#always returns true if gripper performs action correctly - hard coded 
+	#no feedback system right now 
 
 	#send the goal to the action server 
 	client.send_goal(goal)

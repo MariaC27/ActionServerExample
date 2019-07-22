@@ -34,6 +34,15 @@ class ExampleAction(object):
 
 
 		if success:
+			#check request string and call functions to open and close gripper
+			#gripper = Robotiq_Two_Finger_Gripper(robot, 1.25)
+			#then return true
+			#if(request = 'close') --> robotiqgrip.close_gripper()
+			#if(request = 'open') --> robotiqugrip.open_gripper()
+			#rob.send_program(robotiqgrip.ret_program_to_run())
+				#rob.close()
+				#print "true"
+				#sys.exit()
 			self._result.OpenOrClose = goal.request
 			rospy.loginfo('%s: Succeeded' % self._action_name)
 	            	self._as.set_succeeded(self._result)
